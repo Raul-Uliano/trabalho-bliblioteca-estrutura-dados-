@@ -23,11 +23,6 @@ Criar uma arquitetura simples para controlar livros, usuários, empréstimos, fi
 - `index.js`: código do sistema
 - `diagrama.md`: diagrama UML simples
 
-## Como executar
-
-Para executar o projeto, é necessário ter o Node.js instalado.
-
-No terminal, dentro da pasta do projeto, rode:
 
 ```bash
 node index.js
