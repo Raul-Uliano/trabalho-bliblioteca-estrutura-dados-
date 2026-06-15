@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Biblioteca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Sistema de Biblioteca</h1>
+    <p>Controle simples de livros, usuários, empréstimos e fila de espera</p>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>Cadastrar Livro</h2>
+
+      <input type="number" id="livroId" placeholder="ID do livro">
+      <input type="text" id="livroTitulo" placeholder="Título do livro">
+      <input type="text" id="livroAutor" placeholder="Autor">
+      <input type="number" id="livroQuantidade" placeholder="Quantidade">
+
+      <button onclick="cadastrarLivro()">Cadastrar Livro</button>
+    </section>
+
+    <section class="card">
+      <h2>Cadastrar Usuário</h2>
+
+      <input type="number" id="usuarioId" placeholder="ID do usuário">
+      <input type="text" id="usuarioNome" placeholder="Nome do usuário">
+
+      <button onclick="cadastrarUsuario()">Cadastrar Usuário</button>
+    </section>
+
+    <section class="card">
+      <h2>Emprestar Livro</h2>
+
+      <input type="number" id="emprestimoLivroId" placeholder="ID do livro">
+      <input type="number" id="emprestimoUsuarioId" placeholder="ID do usuário">
+
+      <button onclick="emprestarLivro()">Emprestar</button>
+    </section>
+
+    <section class="card">
+      <h2>Devolver Livro</h2>
+
+      <input type="number" id="devolucaoLivroId" placeholder="ID do livro">
+      <input type="number" id="devolucaoUsuarioId" placeholder="ID do usuário">
+
+      <button onclick="devolverLivro()">Devolver</button>
+    </section>
+
+    <section class="card resultado">
+      <h2>Mensagem</h2>
+      <p id="mensagem">Aguardando ação...</p>
+    </section>
+
+    <section class="card">
+      <h2>Livros Cadastrados</h2>
+      <div id="listaLivros"></div>
+    </section>
+
+    <section class="card">
+      <h2>Usuários Cadastrados</h2>
+      <div id="listaUsuarios"></div>
+    </section>
+
+    <section class="card">
+      <h2>Empréstimos Ativos</h2>
+      <div id="listaEmprestimos"></div>
+    </section>
+
+    <section class="card">
+      <h2>Ranking dos Mais Emprestados</h2>
+      <div id="ranking"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
